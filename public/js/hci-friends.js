@@ -5,6 +5,13 @@ $(document).ready(function() {
 	initializePage();
 })
 
+$('.nama').click(function(e) {
+	e.preventDefault();
+	$(this).text(anagrammedName(
+		$(this).text()
+		));
+});
+
 /*
  * Function that is called when the document is ready.
  */
